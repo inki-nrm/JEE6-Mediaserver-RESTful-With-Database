@@ -1,0 +1,14 @@
+<jdbc-connection-pool driver-classname="" datasource-classname="com.mysql.jdbc.jdbc2.optional.MysqlConnectionPoolDataSource" 
+res-type="javax.sql.ConnectionPoolDataSource" description="" name="__nrmMin">
+      <property name="portNumber" value="3306"></property>
+      <property name="databaseName" value="nrm_minimum"></property>
+      <property name="Server" value="localhost"></property>
+      <property name="user" value="root"></property>
+      <property name="password" value="ingimar"></property>
+    </jdbc-connection-pool>
+    <jdbc-resource pool-name="__nrmMin" description="" jndi-name="jdbc/__nrmMin">
+</jdbc-resource>
+
+<server>
+ <resource-ref ref="jdbc/__nrmMin"></resource-ref>
+</server>
